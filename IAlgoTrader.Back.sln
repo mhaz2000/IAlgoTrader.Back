@@ -1,0 +1,89 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IAlgoTrader.Back", "IAlgoTrader.Back\IAlgoTrader.Back.csproj", "{65A2D3A1-8AC9-4BC1-95DC-4F68B3814B39}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.Application", "1.Application", "{5A3DF863-A6F3-4BBD-9AC3-7A2601A5DBB0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.Service", "2.Service", "{3EF85A24-BC27-4B78-BDB5-357C633065CB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3.Domain", "3.Domain", "{3637588C-0D49-4B8B-BFB7-A6D583155C1F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.Repository", "4.Repository", "{563A2393-182F-4853-B7DA-216B6274E987}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5.Infrastructure", "5.Infrastructure", "{43450E9C-F5BE-4D52-95FE-9BF654BF25D9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "6.Message", "6.Message", "{5D6149ED-3053-44F5-AF27-B0EEA5B3C4F2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IAlgorTrader.Back.Service", "IAlgorTrader.Back.Service\IAlgorTrader.Back.Service.csproj", "{0A4E86D6-903A-4C78-AE64-E548849C07AF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IAlgoTrader.Back.Service.Implementation", "IAlgoTrader.Back.Service.Implementation\IAlgoTrader.Back.Service.Implementation.csproj", "{12787D47-7C5D-4E79-856C-28C6796C5185}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IAlgoTrader.Back.Domain", "IAlgoTrader.Back.Domain\IAlgoTrader.Back.Domain.csproj", "{86EF8235-80D5-45F9-BF9F-EFE19EC9EE18}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IAlgoTrader.Back.Repository", "IAlgoTrader.Back.Repository\IAlgoTrader.Back.Repository.csproj", "{EF099E6D-E29B-4BC0-AC7D-4D25F035AF09}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IAlgoTrader.Back.Repository.Implementation", "IAlgoTrader.Back.Repository.Implementation\IAlgoTrader.Back.Repository.Implementation.csproj", "{255BFE46-753D-4AD6-A10D-53406557F59D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IAlgoTrader.Back.Infrastructure", "IAlgoTrader.Back.Infrastructure\IAlgoTrader.Back.Infrastructure.csproj", "{2E943442-9382-469F-9104-250C585E9BE9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IAlgoTrader.Back.Message", "IAlgoTrader.Back.Message\IAlgoTrader.Back.Message.csproj", "{32480648-8600-416A-BD5A-A019EAA08B3A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{65A2D3A1-8AC9-4BC1-95DC-4F68B3814B39}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65A2D3A1-8AC9-4BC1-95DC-4F68B3814B39}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65A2D3A1-8AC9-4BC1-95DC-4F68B3814B39}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65A2D3A1-8AC9-4BC1-95DC-4F68B3814B39}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A4E86D6-903A-4C78-AE64-E548849C07AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A4E86D6-903A-4C78-AE64-E548849C07AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A4E86D6-903A-4C78-AE64-E548849C07AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A4E86D6-903A-4C78-AE64-E548849C07AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{12787D47-7C5D-4E79-856C-28C6796C5185}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12787D47-7C5D-4E79-856C-28C6796C5185}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12787D47-7C5D-4E79-856C-28C6796C5185}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12787D47-7C5D-4E79-856C-28C6796C5185}.Release|Any CPU.Build.0 = Release|Any CPU
+		{86EF8235-80D5-45F9-BF9F-EFE19EC9EE18}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86EF8235-80D5-45F9-BF9F-EFE19EC9EE18}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86EF8235-80D5-45F9-BF9F-EFE19EC9EE18}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86EF8235-80D5-45F9-BF9F-EFE19EC9EE18}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF099E6D-E29B-4BC0-AC7D-4D25F035AF09}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF099E6D-E29B-4BC0-AC7D-4D25F035AF09}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF099E6D-E29B-4BC0-AC7D-4D25F035AF09}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF099E6D-E29B-4BC0-AC7D-4D25F035AF09}.Release|Any CPU.Build.0 = Release|Any CPU
+		{255BFE46-753D-4AD6-A10D-53406557F59D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{255BFE46-753D-4AD6-A10D-53406557F59D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{255BFE46-753D-4AD6-A10D-53406557F59D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{255BFE46-753D-4AD6-A10D-53406557F59D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E943442-9382-469F-9104-250C585E9BE9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E943442-9382-469F-9104-250C585E9BE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E943442-9382-469F-9104-250C585E9BE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E943442-9382-469F-9104-250C585E9BE9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{32480648-8600-416A-BD5A-A019EAA08B3A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32480648-8600-416A-BD5A-A019EAA08B3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32480648-8600-416A-BD5A-A019EAA08B3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32480648-8600-416A-BD5A-A019EAA08B3A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{65A2D3A1-8AC9-4BC1-95DC-4F68B3814B39} = {5A3DF863-A6F3-4BBD-9AC3-7A2601A5DBB0}
+		{0A4E86D6-903A-4C78-AE64-E548849C07AF} = {3EF85A24-BC27-4B78-BDB5-357C633065CB}
+		{12787D47-7C5D-4E79-856C-28C6796C5185} = {3EF85A24-BC27-4B78-BDB5-357C633065CB}
+		{86EF8235-80D5-45F9-BF9F-EFE19EC9EE18} = {3637588C-0D49-4B8B-BFB7-A6D583155C1F}
+		{EF099E6D-E29B-4BC0-AC7D-4D25F035AF09} = {563A2393-182F-4853-B7DA-216B6274E987}
+		{255BFE46-753D-4AD6-A10D-53406557F59D} = {563A2393-182F-4853-B7DA-216B6274E987}
+		{2E943442-9382-469F-9104-250C585E9BE9} = {43450E9C-F5BE-4D52-95FE-9BF654BF25D9}
+		{32480648-8600-416A-BD5A-A019EAA08B3A} = {5D6149ED-3053-44F5-AF27-B0EEA5B3C4F2}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {88C790D7-7D0E-4316-AF1E-6C9F6BD253D2}
+	EndGlobalSection
+EndGlobal

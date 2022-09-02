@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <LangVersion>preview</LangVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\IAlgoTrader.Back.Domain\IAlgoTrader.Back.Domain.csproj" />
+    <ProjectReference Include="..\IAlgoTrader.Back.Message\IAlgoTrader.Back.Message.csproj" />
+  </ItemGroup>
+
+</Project>
