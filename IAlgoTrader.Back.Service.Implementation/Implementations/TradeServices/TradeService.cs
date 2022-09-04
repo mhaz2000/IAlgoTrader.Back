@@ -212,6 +212,22 @@ namespace IAlgoTrader.Back.Service.Implementation.Implementations.TradeServices
                 OrderNumber = orders.FirstOrDefault(c => c.Id == s.OrderId).Number
             }).OrderByDescending(s => s.Date);
         }
+
+        public async Task<TradesInfoDto> GetTradesInfo()
+        {
+            var allTrades = await _unitOfWork.TradeRepository.GetAllAsync();
+            var tradesCount = allTrades.Count();
+            var tradesVolumes = allTrades.Sum(s => s.SellVolume + s.BuyVolume);
+            var tradesPrice = allTrades.Sum(s => s.Price);
+
+            return new TradesInfoDto
+            {
+                TradesCount = tradesCount,
+                TradesVolumes = tradesVolumes,
+                TradesPrice = tradesPrice
+            };
+        }
+
         private double VWAPCalculating(IEnumerable<Transaction> transactions)
         {
             var tradeNumbers = 0;
@@ -229,5 +245,6 @@ namespace IAlgoTrader.Back.Service.Implementation.Implementations.TradeServices
 
             return finalResult;
         }
+
     }
 }

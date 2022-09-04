@@ -110,6 +110,24 @@ namespace IAlgoTrader.Back.Service.Implementation.Implementations.SymbolTransact
             }).ToList();
         }
 
+        public async Task<IEnumerable<TransactionDto>> GetSymbolTransactions(Guid id)
+        {
+            var pc = new PersianCalendar();
+            var transactions = await _unitOfWork.SymbolTransactionRepository.GetIncludedTransactionBySymbolId(id);
+            return transactions.Select(transaction => new TransactionDto()
+            {
+                ClosePrice = transaction.ClosePrice,
+                Date = $"{pc.GetYear(transaction.Date)}/{pc.GetMonth(transaction.Date)}/{pc.GetDayOfMonth(transaction.Date)}",
+                Id = id,
+                LastPrice = transaction.LastPrice,
+                NumberTrade = transaction.NumberTrade,
+                PriceFirst = transaction.PriceFirst,
+                PriceMax = transaction.PriceMax,
+                PriceMin = transaction.PriceMin,
+                SymbolId = transaction.SymbolId,
+            });
+        }
+
         private string ConvertDateToString(DateTime date)
         {
             var pc = new PersianCalendar();

@@ -7,5 +7,6 @@ namespace IAlgorTrader.Back.Service.Interfaces.TradeService
         Task RegisterTrades();
 
         Task<IEnumerable<TradeDto>> GetTrades(Guid userId);
+        Task<TradesInfoDto> GetTradesInfo();
     }
 }

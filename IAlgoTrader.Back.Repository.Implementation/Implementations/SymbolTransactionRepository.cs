@@ -31,5 +31,10 @@ namespace IAlgoTrader.Back.Repository.Implementation.Implementations
         {
             return Context.Transactions.Include(c => c.Symbol);
         }
+
+        public async Task<ICollection<Transaction>> GetIncludedTransactionBySymbolId(Guid id)
+        {
+            return await Context.Transactions.Include(c => c.Symbol).Where(c => c.SymbolId == id).ToListAsync();
+        }
     }
 }

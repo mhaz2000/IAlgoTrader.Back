@@ -65,6 +65,11 @@ namespace IAlgoTrader.Back.Service.Implementation.Implementations.UserServices
             }
         }
 
+        public async Task<int> GetUserCount()
+        {
+            return (await _unitOfWork.UserRepository.GetAllAsync()).Count();
+        }
+
         public async Task<ICollection<UserDto>> GetUsers(string? search = "")
         {
             try

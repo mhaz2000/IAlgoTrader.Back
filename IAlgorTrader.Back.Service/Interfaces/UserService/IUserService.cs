@@ -11,6 +11,6 @@ namespace IAlgorTrader.Back.Service.Interfaces.UserService
         Task<ICollection<UserDto>> GetUsers(string? search = "");
         Task<UserLoginDto> LoginUser(LoginCommand command, JwtIssuerOptions jwtIssuerOptions);
         Task<UserDto> GetUser(string id);
-
+        Task<int> GetUserCount();
     }
 }
